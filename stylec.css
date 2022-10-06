@@ -1,0 +1,285 @@
+/* FUENTES Y TAMAÑOS */
+/* font-family: 'Lexend'; */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap");
+/* COLORES */
+
+:root {
+  --yellow: #ffd87eff;
+  --green-light: #97b8a5ff;
+  --green-dark: #477d5e;
+  --sky-blue: #deeaecff;
+  --coral: #f18b7eff;
+  --pink-light: #ffe4ddff;
+  --grey-dark: #3f3f3fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: "Lexend";
+  font-size: 36px !important;
+  font-weight: 900 !important;
+}
+
+h2 {
+  font-family: "Lexend";
+  font-size: 30px !important;
+  font-weight: 800 !important;
+}
+
+h3 {
+  font-family: "Lexend";
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+
+.boton:hover {
+  color: #477d5e !important;
+  background-color: #97b8a5ff !important;
+}
+
+.boton {
+  font-family: "Lexend";
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  background-color: #477d5e !important;
+  color: #ffffff !important;
+  border-radius: 15px;
+}
+
+p {
+  text-align: center;
+}
+
+.texto__grande {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: clamp(0.8rem, 1.1vw, 1.3rem);
+}
+
+.texto__mediano {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 18px;
+}
+
+.texto__pequeño {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 14px;
+}
+
+.texto__rosa {
+  color: #f18b7eff !important;
+}
+
+/*--------------------------------NAVBAR------------------------------------*/
+
+nav {
+  border-bottom: 1.5px solid rgba(151, 184, 165, 0.5);
+  box-shadow: 0px 5px 12px rgba(151, 184, 165, 0.25);
+}
+
+.logo-style {
+  height: clamp(80px, 10vw, 105px);
+}
+
+.btn-close {
+  width: 4em;
+  height: 5em;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(151, 184, 165, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.fond-style {
+  background-color: var(--pink-light);
+}
+
+.text-style {
+  color: #477d5e;
+  font-family: Lexend;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.text-style {
+  font-size: clamp(0.5em, 1.5vw, 1.3em);
+}
+
+.menu-style > li > a > span {
+  transition: all 300ms;
+}
+
+.menu-style > li > a > span:hover {
+  display: block;
+  color: var(--coral);
+  transform: translateY(-5px);
+}
+
+.menu-style > li > a > span:hover::after {
+  height: 5px;
+  width: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--coral);
+}
+
+@media (max-width: 576px) {
+  .logo-style {
+    height: 80px;
+  }
+
+  nav {
+    border: none;
+  }
+
+  .fond-style {
+    background-color: var(--green-light);
+  }
+  .text-style {
+    color: #ffffffcc;
+    font-family: Lexend;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .menu-style > li > a > span:hover {
+    color: var(--green-dark);
+    display: inline-block;
+  }
+  .menu-style > li > a > span:hover::after {
+    background: var(--green-dark);
+  }
+}
+
+/*-------------------------------FIN-NAVBAR------------------------------------*/
+
+/*-------------------------------SECTION PERRITO------------------------------------*/
+.sobreNosotros {
+  height: 80vh;
+}
+.tamaño-img > img {
+  max-width: 85%;
+  height: 100%;
+}
+
+.grid__total {
+  display: grid;
+  justify-content: center;
+  column-gap: 20px;
+  text-align: center;
+  max-height: 20vh;
+}
+
+.grid__1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  max-width: 400px;
+  align-self: end;
+  margin-bottom: 10px;
+}
+
+.grid__2 {
+  margin: 0;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  max-width: 400px;
+}
+
+.grid__3 {
+  margin: 0;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  max-width: 400px;
+  align-self: center;
+  margin-top: 100px;
+}
+
+.grid__4 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-top: 60px;
+}
+
+.grid__1 > p,
+.grid__2 > p,
+.grid__3 > p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .grid__1 {
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    max-width: 400px;
+    align-self: end;
+    margin-bottom: 10px;
+  }
+  .grid__4 {
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-items: center;
+  }
+  .grid__3 {
+    font-size: 20px;
+    margin: 0 auto;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .grid__2 {
+    margin: 0 auto;
+    font-size: 20px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1670px) {
+  .grid__3 {
+    margin: 0;
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    max-width: 400px;
+    align-self: center;
+    text-align: center;
+  }
+}
